@@ -1,62 +1,277 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+	<title>Greenhall Presents...</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black-custom.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-					<textarea data-template>
-						## Slide Template
-						Using Markdown
+	<!-- Google font import -->
 
-					</textarea>
-				</section>	
+	<link href='https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Mono&display=swap' rel="stylesheet">
 
-				<section data-markdown>
-					<textarea data-template>
-						## Slide 2
-						Using Markdown
+	<!-- Theme used for syntax highlighting of code -->
+	<!--
+	<link rel="stylesheet" href="lib/css/monokai.css">
+-->
+<!-- Printing and PDF exports -->
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>	
+<style type="text/css">
+	.reveal p {
+		text-align: left;
+		margin: 20px 0 0 35px;
+		width: 90%;
+		color: #D3EBB0;
+		font-size: 1em;
+		vertical-align: middle;
 
-					</textarea>
-				</section>	
-			</div>
-		</div>
+	}
 
-		<script src="js/reveal.js"></script>
+	#russellimage {
+		float: right;
+		width: 25%;
+		vertical-align: middle;
+	}
+	#logo {
+		height:100%;
+	}
+	.embedvideo {
+		float: right
+		;		width: 100%;
+		vertical-align: middle;
+	}
 
-		<script>
+
+	.reveal {
+		font-family: 'Roboto Mono', monospace;
+		font-family: 'Roboto', sans-serif;
+		font-family: 'Oswald', sans-serif;
+
+	}
+
+	.vertMiddle {
+		text-align: center;
+	}
+	
+	.bordered
+	{}
+</style>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+<!-- Templates 
+			<section id="htmltemplate">
+				<h1>HTML Based Slide Template</h1>
+				<h3>Secondary Title</h3>
+				<p>With some text at the bottom</p>
+				<ul>
+					<li class="fragment">Accelerating data science</li>
+					<li class="fragment">Model of Open Source Collaboration</li>
+				</ul>
+			</section>
+			<section id="markdowntemplate" data-markdown>
+				<textarea data-template>
+					## Slide Template
+					Using Markdown
+					```javascript
+					var globalVar = document.getElementsByTagName( 'head' )[0]
+					function someJavascript()
+					```
+				</textarea>
+			</section>
+		
+		-->
+		<section data-background-image="assets/logo.png" data-background-size="contain" data-background-repeat="no-repeat"></section> 
+
+		<section data-background-video="assets/out5.mp4" data-background-video-loop="true" >
+
+		</section>
+		<section id="Introduction">
+			<h3>Who is this guy?</h3>
+			<p><b>Russell Green Osborne</b></p><img src="assets/russell.jpg" id="russellimage" alt="Handsome Guy">
+			<p>Background:</p>
+			<ul>
+				<li class="fragment fade-left" data-fragment-index="1" >Web Development and IT</li>
+				<li class="fragment fade-left" data-fragment-index="1" >Resource Mgmt & Sustainable Agriculture</li>
+				<li class="fragment fade-left" data-fragment-index="1" >Precision Agriculture</li>
+			</ul>
+			<h3>Drives</h3>
+			<ul>
+				<li class="fragment">Accelerating data science</li>
+				<li class="fragment fade-in">My real interests lay in community sustainability and resilience.</li>
+
+			</ul>
+
+		</section>
+		<section>
+			<!-- Groundwork -->
+			<h3 class="fragment highlight-current-blue">Why am I here today?</h3>
+			<h4 class="fragment highlight-red">Big Question</h4>
+			<p class="fragment fade-in">I use open-source tools daily in my own work and help clients/partners get the same benefits.</p>
+
+
+			<h3 class="fragment fade-in highlight-current-blue">Why is that important?</h3>
+			<ul>
+
+				<li class="fragment fade-in">Better tools are built from the ground up and we have a fresh opportunity to do that with new enabling technologies</li>
+				<li class="fragment fade-right">Makes small agricultural producers first class tech citizens. </li>
+
+				<li class="fragment">Local production? Small farms are key!</li>
+				<li class="fragment">Better Management?  More data!</li>
+			</ul>
+		</section>
+		<section>
+			<section data-transition="zoom">
+				<h2>Philosophy time!</h2>
+				<P>Free & Open-Source Software (FOSS) - Software the preserves the Four Fundamental Software Freedoms</P>
+				<p>Freedom to:</p>
+				<blockquote class=""><span class="fragment fade-left">Run</span>&nbsp;&nbsp;&nbsp;<span class="fragment fade-down">Understand</span>&nbsp;&nbsp;&nbsp;<span class="fragment fade-up">Modify</span>&nbsp;&nbsp;&nbsp;<span class="fragment fade-right">Distribute</span></blockquote>
+			</section>
+
+			<section data-transition="zoom">
+				<h2>Philosophy II</h2>
+				<ul>
+					<li><p>Not just accessible source code!</p></li>
+					<li><p>"Cathedral vs The Bazaar"</p></li>
+					<li><p>System of collaboration and coordination</p></li>
+					<li><p>Best designed bottom-up</p></li>						
+				</ul>
+			</section>
+
+			<section data-markdown data-background-video="assets/gear.mp4" data-background-video-loop="true" >
+				<textarea data-template>
+					## Barriers to Adoption of F/OSS?
+					* F/OS software often meets legal and compliance requirements <!-- .element: class="fragment fade-right" -->
+					* Accept that software, or any complexity, costs money. <!-- .element: class="fragment fade-right" -->
+
+					## Where is open-source tech now? <!-- .element: class="fragment fade-left" -->
+
+					* It is the cloud <!-- .element: class="fragment fade-right" -->
+					* Android <!-- .element: class="fragment fade-right" -->
+					* Office software <!-- .element: class="fragment fade-right" -->
+				</textarea>	
+			</section>
+		</section>
+		<section > <!-- Vertical Slides -->
+			<section>	
+				<H2 class="fragment fade-down" data-fragment-index="1" > Intelligent Flight Controller: Ardupilot</H2>
+				<ul>
+					<li class="fragment" data-fragment-index="2" >Model of Open Source Collaboration creating stability</li>
+					<li class="fragment" data-fragment-index="3" >Safety minded</li>
+					<li class="fragment" data-fragment-index="4" >Incredibly diverse</li>
+				</ul>
+			</section>
+
+
+			<section data-transition="concave"><div class="stretch"><video data-autoplay src="assets/Maidenflight.mp4"></video></div></section>
+			<section data-transition="concave"><div class="stretch"><video data-autoplay src="assets/Rollout.mp4"></video></div></section>		
+			<section data-transition="concave"><div class="stretch"><video data-autoplay src="assets/apmsingle.mp4"></video></div></section>	
+			<section data-transition="concave"><div class="stretch"><video data-autoplay src="assets/robotdude.mp4"></video></div></section>	
+			<section data-transition="concave"><div class="stretch"><video data-autoplay src="assets/Autonomous tractor.mkv"></video></div></section>	
+
+<!--
+			<section data-transition="zoom-out fade-in"><div class="stretch"><iframe src="https://player.vimeo.com/video/77850133?autoplay=0&muted=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div></section>
+
+			<section data-transition="zoom-out fade-in"><div class="stretch"><iframe width="560" height="315" src="https://www.youtube.com/embed/-EESMnSEpeM?controls=0&amp&autoplay=0&mute=1" frameborder="0" allow="autoplay" allowfullscreen></iframe></div></section>
+			<section data-transition="zoom-out fade-in"><div class="stretch"><iframe width="560" height="315" src="https://www.youtube.com/embed/mYEHvuDq2Fs?start=26&amp&autoplay=0&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></section>
+		-->
+		<section>
+			<h2>Mission Planning</h2>
+			<p>Many open source options</p>  
+			<p>Tradeoff:</p>
+			<ul>
+				<li>Many software choices depending on needs, some with very advanced capabilities.</li>
+				<li>Those capabilities are not meant to be user friendly.</li>
+			</ul>
+			<div class="bordered"><span class="fragment fade-in">Swarms</span> - <span class="fragment fade-down">Copter/Rover/Plane</span> - <span class="fragment fade-up">RTK GPS</span> - <span class="fragment fade-right">MAVLink</span></div>
+		</section>					
+
+		<section>
+			<h2>Data Processing / Data Services</h2>
+			<ul>
+				<li class="fragment" data-fragment-index="2" >Cloud based image processing.</li>
+				<li class="fragment" data-fragment-index="3" >Image processing is based on academic work, which almost always utilized open-source software</li>
+				<li class="fragment" data-fragment-index="4" >Really a question of fixed up-front cost or per-image/per-month service.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Open Drone Map (odm)</h3>
+			<p>Provides single process for creating outputs for analysis</p> 
+			<ul>
+				<li class="fragment fade-in">Orthographic photos</li>
+				<li class="fragment fade-in">3D Point Clouds</li>
+
+			</ul>
+
+			<div class="fragment fade-in"><video data-autoplay src="assets/3Dstuff.mp4" width="100%"></video></div>
+		</section>			
+
+		<section>
+			<h1 class="fragment slide-up">Common theme?</h1>
+			<div class="vertMiddle fragment">Projects will provide the framework and 90% base functionality.</div>
+			<div class="vertMiddle fragment">I end up developing the 10% in new code and "code glue".</div>
+			<div class="vertMiddle fragment">1% goes back to the community.</div>
+		</section>
+	</section>
+
+	<section>
+		<H4>Links And Sources</H4>
+		<p>Open source tools used today:<p>
+			<ul>
+				<li>reveal.js - powering this presentation <a href="https://revealjs.com/#/">LINK</a></li>
+				<li>github - version control <a href="https://github.com/rgreenosborne">LINK</a></li>
+				<li>Ubuntu Linux - running this little laptop <a href="https://github.com/rgreenosborne">LINK</a></li>
+			</ul>
+		</section>
+
+		<section data-background-video="assets/gear.mp4" data-background-video-loop="true" >
+			<H2>End</H2>
+			<blockquote>Thank you for attending!</blockquote>
+			<aside class="notes">
+				It has been my honour and pleasure to be up here today.  Thanks for listening.
+			</aside>
+			<br><br>
+			<h2><u>Discussion & Questions</u></h2>
+		</section>
+
+	</div>
+</div>
+
+
+
+<script src="js/reveal.js"></script>
+
+<script>
+
+
+
+
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				pdfSeparateFragments: false,
+
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
 				]
 			});
 		</script>
 	</body>
-</html>
+	</html>
